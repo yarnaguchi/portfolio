@@ -1,5 +1,7 @@
+import Introduction from "./pages/introduction";
+
 function App() {
-  return <></>;
+  return <Introduction />;
 }
 
 export default App;
