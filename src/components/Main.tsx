@@ -1,8 +1,6 @@
-const mainStyle = {};
-
 function Main() {
   return (
-    <main style={mainStyle}>
+    <main>
       <div>Introduction</div>
     </main>
   );
