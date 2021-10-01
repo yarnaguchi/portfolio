@@ -17,7 +17,15 @@ jobs:
         with:
           node-version: 14.x
           architecture: x64
+
       - name: Install Dependencies
         run: yarn install
-      - name: Deploy on Github Pages
-        run: yarn deploy
+
+      - name: Build React App
+        run: yarn build
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
