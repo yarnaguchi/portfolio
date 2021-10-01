@@ -12,4 +12,5 @@ export type WorkRecord = {
   description: string;
   url: string;
   tags?: string[];
+  wip?: boolean;
 };

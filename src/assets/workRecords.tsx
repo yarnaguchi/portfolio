@@ -13,4 +13,11 @@ export const workRecords: WorkRecord[] = [
     url: "https://fir-first-a8330.web.app/",
     tags: ["Dart", "Flutter", "firebase"],
   },
+  {
+    title: "Gatsby",
+    description: "Gatsby Web",
+    url: "https://yamaguchiryuta.github.io/my-gatsby-site/",
+    tags: ["React", "Gatsby", "javascript"],
+    wip: true,
+  },
 ];

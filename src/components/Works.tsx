@@ -38,23 +38,27 @@ export const Works: VFC<{ workRecords: WorkRecord[] }> = ({ workRecords }) => {
                     );
                   })}
                 </div>
-                <a
-                  className="text-indigo-500 inline-flex items-center"
-                  href={workRecord.url}
-                >
-                  Show
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
+                {workRecord.wip ? (
+                  <p>Work in Progress</p>
+                ) : (
+                  <a
+                    className="text-indigo-500 inline-flex items-center"
+                    href={workRecord.url}
                   >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+                    Show
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                )}
               </div>
             );
           })}
