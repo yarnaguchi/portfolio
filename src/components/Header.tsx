@@ -14,7 +14,7 @@ export const Header: VFC<PageProps> = ({ setPage }) => {
               alt="icon"
             />
           </a>
-          <span className="ml-3 text-xl">山口隆太 Portfolio by Github Actions</span>
+          <span className="ml-3 text-xl">山口隆太 Portfolio</span>
         </div>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <div
