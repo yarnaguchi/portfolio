@@ -16,7 +16,7 @@ export const Header: VFC<PageProps> = ({ setPage }) => {
           </a>
           <span className="ml-3 text-xl">山口隆太 Portfolio</span>
         </div>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        {/* <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <div
             className="mr-5 hover:text-gray-500 cursor-pointer"
             onClick={() => {
@@ -33,7 +33,7 @@ export const Header: VFC<PageProps> = ({ setPage }) => {
           >
             Profile
           </div>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
