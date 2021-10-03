@@ -12,6 +12,7 @@ export const workRecords: WorkRecord[] = [
     description: "Flutter Web版",
     url: "https://fir-first-a8330.web.app/",
     tags: ["Dart", "Flutter", "firebase"],
+    wip: true,
   },
   {
     title: "Gatsby",
